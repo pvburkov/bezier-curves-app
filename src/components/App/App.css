@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.app-container {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-rows: min-content auto;
+    grid-template-areas: "header header" "canvas controls";
+
+    margin: 20px 30px;
+}
+
+header {
+    grid-area: header;
+    font-family: "Century Gothic";
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.canvas-container {
+    grid-area: canvas;
+    align-self: start;
+    justify-self: center;
+    border: 3px solid green;
+    height: 450px;
+    width: 800px;
+}
+
+.controls {
+    grid-area: controls;
+    align-self: stretch;
+    justify-self: center;
+    border: 3px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+    font-family: "Century Gothic";
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.spline-type-label {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.btn {
+    background-color: #00b300;
+    border-radius: 5px;
+    color: white;
+    font-family: "Century Gothic";
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding: 10px 25px;
+    width: 100%;
+}
+
+.spline-type-picker {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('./i/icon_arrowdown.svg');
+    background-repeat: no-repeat;
+    background-position: 97% center;
+    border: 2px solid #00b300;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: "Century Gothic";
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    text-align: left;
+    width: 100%;
+}
+
+.info {
+    border: 2px solid #3431ee;
+    border-radius: 5px;
+    font-size: 1.2em;
+    padding: 8px 10px;
+}
